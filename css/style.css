@@ -1,0 +1,42 @@
+:root{
+  font-size: 17px;
+}
+.navbar{
+  background-color: white !important;
+}
+
+.carousel-item img{
+  width: 100%;
+  height: calc(100vh - 83px);
+  object-fit: fill;
+}
+
+.carousel-caption{
+  background-color: #80808080;
+}
+
+.form-check-input:checked{
+  box-shadow: none;
+  border: none;
+  background-color: black;
+}
+
+.dropdown-toggle:hover span{
+  font-size: 1.1rem;
+  color: red;
+}
+
+.icons-list{
+  font-size: 3.5rem;
+  color: #003a61;
+  z-index: 4;
+  right: 2%;
+  top: 50%;
+  transform: translate(0%,-30%);
+}
+
+.icon:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  color: #003a6171;
+}
