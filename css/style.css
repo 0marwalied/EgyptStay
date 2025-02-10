@@ -12,6 +12,7 @@
 .special-name {
   background: -webkit-linear-gradient(var(--main-color), var(--green-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
