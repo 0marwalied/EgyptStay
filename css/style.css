@@ -1,42 +1,86 @@
-:root{
-  font-size: 17px;
+:root {
+  font-size: 18px;
+  --main-color: #1947a3;
+  --main-hover-color: #1947a3c7;
+  --carousel-bg-color: #80808080;
+  --green-color: #8ae6a4;
 }
-.navbar{
+
+.special-name {
+  background: -webkit-linear-gradient(var(--main-color), var(--green-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  height: 200vh;
+}
+
+.text-color {
+  color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+.bg-color {
+  background-color: var(--main-color) !important;
+}
+
+.btn.btn-dark {
+  background-color: var(--main-color);
+  border: none;
+}
+.btn.btn-dark:hover {
+  background-color: var(--main-hover-color);
+}
+
+.btn.btn-outline-dark {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.btn.btn-outline-dark:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.container-fluid {
+  padding: 0px 5px !important;
+}
+
+.navbar {
   background-color: white !important;
 }
 
-.carousel-item img{
+.carousel-item img {
   width: 100%;
-  height: calc(100vh - 83px);
+  height: calc(100vh - 82.63px);
   object-fit: fill;
 }
 
-.carousel-caption{
-  background-color: #80808080;
+.carousel-caption {
+  background-color: var(--carousel-bg-color);
 }
 
-.form-check-input:checked{
+.form-check-input:checked {
   box-shadow: none;
   border: none;
-  background-color: black;
+  background-color: var(--main-color);
 }
 
-.dropdown-toggle:hover span{
+.dropdown-toggle:hover span {
   font-size: 1.1rem;
-  color: red;
+  color: var(--green-color);
 }
 
-.icons-list{
-  font-size: 3.5rem;
-  color: #003a61;
+.icons-list {
+  font-size: 3rem;
+  color: var(--main-color);
   z-index: 4;
   right: 2%;
   top: 50%;
-  transform: translate(0%,-30%);
+  transform: translate(0%, -30%);
 }
 
-.icon:hover{
+.icon:hover {
   cursor: pointer;
   transition: 0.3s;
-  color: #003a6171;
+  color: var(--main-hover-color);
 }
