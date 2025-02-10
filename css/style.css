@@ -55,7 +55,7 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: calc(100vh - 82.63px);
+  height: calc(100vh - 89.25px);
   object-fit: fill;
 }
 
