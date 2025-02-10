@@ -2,7 +2,10 @@
   font-size: 18px;
   --main-color: #1947a3;
   --main-hover-color: #1947a3c7;
+  --half-main-color: #1947a380;
   --carousel-bg-color: #80808080;
+  --half-black: rgba(0, 0, 0, 0.5);
+  --half-white: rgba(255, 255, 255, 0.5);
   --green-color: #8ae6a4;
 }
 
