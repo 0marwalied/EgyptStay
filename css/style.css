@@ -9,6 +9,13 @@
   --green-color: #8ae6a4;
 }
 
+.transition-navbar {
+  transition: opacity 0.5s ease-in-out;
+}
+.scrolled {
+  opacity: 0.85;
+}
+
 .special-name {
   background: -webkit-linear-gradient(var(--main-color), var(--green-color));
   -webkit-background-clip: text;
@@ -53,11 +60,12 @@ body {
 
 .navbar {
   background-color: white !important;
+  z-index: 9999 !important;
 }
 
 .carousel-item img {
   width: 100%;
-  height: calc(100vh - 89.25px);
+  height: calc(100vh);
   object-fit: fill;
 }
 
@@ -91,7 +99,7 @@ body {
   color: var(--main-hover-color);
 }
 
-.copy-btn{
+.copy-btn {
   position: relative;
 }
 
