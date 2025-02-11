@@ -4,8 +4,8 @@
   --main-hover-color: #1947a3c7;
   --half-main-color: #1947a380;
   --carousel-bg-color: #80808080;
-  --half-black: rgba(0, 0, 0, 0.5);
-  --half-white: rgba(255, 255, 255, 0.5);
+  --half-black: #00000080;
+  --half-white: #ffffff80;
   --green-color: #8ae6a4;
 }
 
@@ -17,9 +17,11 @@
 }
 
 body {
-  height: 200vh;
+  height: 400vh;
 }
-
+.pointer {
+  cursor: pointer;
+}
 .text-color {
   color: var(--main-color) !important;
   border-color: var(--main-color) !important;
@@ -27,7 +29,9 @@ body {
 .bg-color {
   background-color: var(--main-color) !important;
 }
-
+.bg-hover-color {
+  background-color: var(--main-hover-color) !important;
+}
 .btn.btn-dark {
   background-color: var(--main-color);
   border: none;
@@ -35,7 +39,6 @@ body {
 .btn.btn-dark:hover {
   background-color: var(--main-hover-color);
 }
-
 .btn.btn-outline-dark {
   color: var(--main-color);
   border: 1px solid var(--main-color);
@@ -44,7 +47,6 @@ body {
   color: white;
   background-color: var(--main-color);
 }
-
 .container-fluid {
   padding: 0px 5px !important;
 }
@@ -87,4 +89,35 @@ body {
   cursor: pointer;
   transition: 0.3s;
   color: var(--main-hover-color);
+}
+
+.copy-btn{
+  position: relative;
+}
+
+.copy-btn::before,
+.copy-btn::after {
+  position: absolute;
+  top: 98%;
+  left: 98%;
+  background-color: var(--main-hover-color);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 0 12px 12px 12px;
+  display: none;
+}
+.copy-btn::after {
+  content: "Copied";
+}
+.copy-btn::before {
+  content: "Copy to Clipboard";
+}
+.copy-btn:hover::before {
+  display: block;
+}
+.copy-btn:active::after {
+  display: block;
+}
+.copy-btn:active::before {
+  display: none;
 }
