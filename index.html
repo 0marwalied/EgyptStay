@@ -16,7 +16,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary fs-6 fixed-top transition-navbar"
+        class="navbar navbar-expand-lg bg-body-tertiary fs-6 position-fixed w-100"
       >
         <div class="container-fluid">
           <a class="navbar-brand d-flex align-items-center" href="#">
@@ -30,7 +30,7 @@
             <span class="special-name fs-4">EgyptStay</span>
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler shadow-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -86,7 +86,7 @@
               <button class="btn btn-outline-dark" type="submit">Search</button>
               <button
                 type="button"
-                class="btn btn-dark ms-2"
+                class="btn btn-dark ms-2 shadow-none"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
                 data-bs-whatever="@mdo"
@@ -175,7 +175,7 @@
     </header>
 
     <main class="container-fluid">
-      <div
+      <section
         id="carouselExampleCaptions"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -296,17 +296,17 @@
           <span class="visually-hidden">Next</span>
         </button>
 
-        <div class="icons-list position-fixed d-flex flex-column h-100">
-          <i class="fa-brands fa-square-facebook icon my-4"></i>
-          <i class="fa-brands fa-square-whatsapp icon my-4"></i>
-          <i class="fa-brands fa-square-twitter icon my-4"></i>
-          <i class="fa-brands fa-linkedin icon my-4"></i>
-          <i class="fa-brands fa-square-instagram icon my-4"></i>
+        <div class="icons-list position-fixed d-flex flex-column">
+          <i class="fa-brands fa-square-facebook icon my-3"></i>
+          <i class="fa-brands fa-square-whatsapp icon my-3"></i>
+          <i class="fa-brands fa-square-twitter icon my-3"></i>
+          <i class="fa-brands fa-linkedin icon my-3"></i>
+          <i class="fa-brands fa-square-instagram icon my-3"></i>
         </div>
-      </div>
+      </section>
       <!-- photos autoplay -->
 
-      <div class="bg-white text-color py-4 px-4 rounded-bottom shadow">
+      <section class="bg-white text-color py-4 px-4 rounded-bottom shadow">
         <h2 class="text-uppercase special-name fs-2">welcome</h2>
         <p class="fs-6">
           Discover the best hotels in Egypt, from the heart of Cairo to the
@@ -315,104 +315,106 @@
           perfect place for your journey.
         </p>
         <button class="btn btn-dark fs-5">Learn more</button>
-      </div>
+      </section>
       <!-- welcome message -->
 
       <hr class="my-3" />
 
-      <h2
-        class="p-3 bg-white shadow-sm mb-4 rounded text-center special-name fs-1"
-      >
-        Top Travel Destinations in Egypt
-      </h2>
-      <!-- title -->
+      <section>
+        <h2
+          class="p-3 bg-white shadow-sm mb-4 rounded text-center special-name fs-1"
+        >
+          Top Travel Destinations in Egypt
+        </h2>
+        <!-- title -->
 
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item rounded">
-          <h2 class="accordion-header rounded">
-            <button
-              class="accordion-button collapsed fs-5 fw-bold text-color shadow-sm rounded"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-color shadow-sm rounded"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Cairo – The Heart of History
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
             >
-              Cairo – The Heart of History
-            </button>
-          </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <p>✔ Home to the Pyramids of Giza and the Sphinx</p>
-              <p>
-                ✔ Explore the Grand Egyptian Museum and its ancient treasures
-              </p>
-              <p>
-                ✔ Wander through the vibrant Khan El Khalili Bazaar for
-                souvenirs
-              </p>
+              <div class="accordion-body">
+                <p>✔ Home to the Pyramids of Giza and the Sphinx</p>
+                <p>
+                  ✔ Explore the Grand Egyptian Museum and its ancient treasures
+                </p>
+                <p>
+                  ✔ Wander through the vibrant Khan El Khalili Bazaar for
+                  souvenirs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-color shadow-sm rounded"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Luxor – The City of Temples
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>✔ Discover the Valley of the Kings, where pharaohs rest</p>
+                <p>✔ Walk through the grand Karnak Temple and Luxor Temple</p>
+                <p>✔ Enjoy a scenic Nile River cruise at sunset</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-color shadow-sm rounded"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Hurghada – The Red Sea Gem
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body shadow-sm rounded-bottom">
+                <p>✔ Experience stunning beaches and crystal-clear waters</p>
+                <p>✔ Go snorkeling or diving in the Giftun Islands</p>
+                <p>✔ Enjoy vibrant nightlife, resorts, and desert safaris</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item rounded">
-          <h2 class="accordion-header rounded">
-            <button
-              class="accordion-button collapsed fs-5 fw-bold text-color shadow-sm rounded"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
-              Luxor – The City of Temples
-            </button>
-          </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <p>✔ Discover the Valley of the Kings, where pharaohs rest</p>
-              <p>✔ Walk through the grand Karnak Temple and Luxor Temple</p>
-              <p>✔ Enjoy a scenic Nile River cruise at sunset</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item rounded">
-          <h2 class="accordion-header rounded">
-            <button
-              class="accordion-button collapsed fs-5 fw-bold text-color shadow-sm rounded"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
-            >
-              Hurghada – The Red Sea Gem
-            </button>
-          </h2>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body shadow-sm rounded-bottom">
-              <p>✔ Experience stunning beaches and crystal-clear waters</p>
-              <p>✔ Go snorkeling or diving in the Giftun Islands</p>
-              <p>✔ Enjoy vibrant nightlife, resorts, and desert safaris</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
       <!-- accordion -->
 
       <hr class="my-3" />
 
-      <div class="container-fluid shadow-lg">
+      <section class="shadow-lg rounded">
         <h2
           class="p-3 bg-white rounded text-center special-name fs-1 text-capitalize m-0"
         >
@@ -421,7 +423,8 @@
         <!-- title -->
         <div class="bg-hover-color text-white py-4 px-4 rounded-bottom shadow">
           <span class="fs-5">Write and Translate </span>
-          <span class="text-capitalize fs-5 text-black fw-medium pointer"
+          <span
+            class="text-capitalize fs-5 text-black fw-medium pointer d-block"
             >press here</span
           >
           <button
@@ -436,12 +439,12 @@
             style="height: 120px"
           ></textarea>
         </div>
-      </div>
+      </section>
       <!-- translate to english section -->
 
       <hr class="my-3" />
 
-      <div class="container-fluid shadow-lg">
+      <section class="shadow-lg rounded">
         <h2
           class="p-3 bg-white rounded text-center special-name fs-1 text-capitalize m-0"
         >
@@ -450,7 +453,8 @@
         <!-- title -->
         <div class="bg-hover-color text-white py-4 px-4 rounded-bottom shadow">
           <span class="fs-5">Write and Translate </span>
-          <span class="text-capitalize fs-5 text-black fw-medium pointer"
+          <span
+            class="text-capitalize fs-5 text-black fw-medium pointer d-block"
             >press here</span
           >
           <button
@@ -465,12 +469,12 @@
             style="height: 120px"
           ></textarea>
         </div>
-      </div>
+      </section>
       <!-- translate to frensh section -->
 
       <hr class="my-3" />
 
-      <div class="shadow-lg rounded">
+      <section class="shadow-lg rounded">
         <h2
           class="p-3 bg-white rounded text-center special-name fs-1 text-capitalize m-0"
         >
@@ -479,7 +483,8 @@
         <!-- title -->
         <div class="bg-hover-color text-white py-4 px-4 rounded-bottom shadow">
           <span class="fs-5">Write and Translate </span>
-          <span class="text-capitalize fs-5 text-black fw-medium pointer"
+          <span
+            class="text-capitalize fs-5 text-black fw-medium pointer d-block"
             >press here</span
           >
           <button
@@ -494,7 +499,276 @@
             style="height: 120px"
           ></textarea>
         </div>
-      </div>
+      </section>
+
+      <hr class="my-3 shadow" />
+
+      <section class="background-img w-100"></section>
+      <section>
+        <h2
+          class="p-3 bg-white shadow rounded-bottom text-center special-name fs-1 text-capitalize mb-5"
+        >
+          Top Hotels in Egypt's Best Destinations
+        </h2>
+        <div class="row d-flex justify-content-center">
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel1.jpg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">The St. Regis</h5>
+                  <a href="#" class="btn btn btn-dark text-capitalize"
+                    >know more</a
+                  >
+                </div>
+                <p class="card-text">
+                  Located in <b>Cairo</b>, this luxury hotel sits on the banks
+                  of the Nile, offering world-class hospitality, opulent
+                  interiors, and breathtaking river views.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel2.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Four Seasons</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  A stunning beachfront retreat in <b>Alexandria</b>, with
+                  Mediterranean views, exceptional dining, and a private sandy
+                  beach for ultimate relaxation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel3.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Marriott Mena</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  An iconic hotel in <b>Giza</b>, boasting an unbeatable view of
+                  the Pyramids, historic charm, modern luxury, and lush gardens.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel4.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Hilton Luxor</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  A peaceful escape in <b>Luxor</b>, set by the Nile with an
+                  infinity pool, luxurious spa, and rooms offering stunning
+                  river sunsets.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel5.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Taziry Ecolodge</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  An eco-friendly oasis in <b>Siwa</b>, combining traditional
+                  desert charm with sustainable luxury, natural pools. and
+                  stunning sand dunes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel6.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Rixos Sharm</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  A high-end resort in <b>Sharm El Sheikh</b>, with pristine
+                  beaches, luxurious accommodations, and some of Egypt’s best
+                  diving spots.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel7.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Premier</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  Located in <b>Sahl Hasheesh</b>, this adults-only resort is a
+                  paradise of tranquility, offering private beach access,
+                  world-class spas, and gourmet dining.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel8.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Casa Cook</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  Nestled in <b>El Gouna</b>, this boutique-style hotel blends
+                  bohemian aesthetics with modern luxury. Featuring private
+                  pools, yoga sessions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel9.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Steigenberger</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  A vibrant, family-friendly resort in <b>Hurghada</b>, known
+                  for its thrilling water park, lazy river, and all-inclusive
+                  luxury. It offers entertainment for all ages.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel10.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Mövenpick Aswan</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  A unique island retreat in <b>Aswan</b>, surrounded by the
+                  Nile’s tranquil waters. This luxurious hotel offers
+                  breathtaking panoramic views, lush gardens.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="col-xl-4 col-md-6 col-12 mb-5 d-flex justify-content-center"
+          >
+            <div class="card shadow" style="width: 20rem">
+              <img
+                src="./images/hotel11.jpeg"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-1">
+                  <h5 class="card-title d-inline fs-5">Stella Di Mare</h5>
+                  <a href="#" class="btn btn-dark text-capitalize">know more</a>
+                </div>
+                <p class="card-text">
+                  Located in <b>Ain El Sokhna</b>, this luxurious resort
+                  features a private beach, world-class spa, multiple pools, and
+                  a serene atmosphere perfect for relaxing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <!-- row -->
+      </section>
+
       <!-- translate to german section -->
     </main>
     <footer></footer>

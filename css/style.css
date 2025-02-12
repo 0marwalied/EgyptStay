@@ -8,23 +8,14 @@
   --half-white: #ffffff80;
   --green-color: #8ae6a4;
 }
-
-.transition-navbar {
-  transition: opacity 0.5s ease-in-out;
-}
-.scrolled {
-  opacity: 0.85;
-}
-
 .special-name {
   background: -webkit-linear-gradient(var(--main-color), var(--green-color));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 body {
-  height: 400vh;
+  height: 500vh;
 }
 .pointer {
   cursor: pointer;
@@ -40,11 +31,11 @@ body {
   background-color: var(--main-hover-color) !important;
 }
 .btn.btn-dark {
-  background-color: var(--main-color);
-  border: none;
+  background-color: var(--main-color) !important;
+  border: none !important;
 }
 .btn.btn-dark:hover {
-  background-color: var(--main-hover-color);
+  background-color: var(--main-hover-color) !important;
 }
 .btn.btn-outline-dark {
   color: var(--main-color);
@@ -57,52 +48,47 @@ body {
 .container-fluid {
   padding: 0px 5px !important;
 }
-
 .navbar {
+  opacity: 0.9;
   background-color: white !important;
   z-index: 9999 !important;
 }
-
 .carousel-item img {
   width: 100%;
   height: calc(100vh);
   object-fit: fill;
 }
-
 .carousel-caption {
   background-color: var(--carousel-bg-color);
 }
-
 .form-check-input:checked {
   box-shadow: none;
   border: none;
   background-color: var(--main-color);
 }
-
+.dropdown-toggle {
+  width: fit-content !important;
+}
 .dropdown-toggle:hover span {
   font-size: 1.1rem;
   color: var(--green-color);
 }
-
 .icons-list {
   font-size: 3rem;
   color: var(--main-color);
   z-index: 4;
-  right: 2%;
+  right: 3.5%;
   top: 50%;
-  transform: translate(0%, -30%);
+  transform: translate(0%, -50%);
 }
-
 .icon:hover {
   cursor: pointer;
   transition: 0.3s;
   color: var(--main-hover-color);
 }
-
 .copy-btn {
   position: relative;
 }
-
 .copy-btn::before,
 .copy-btn::after {
   position: absolute;
@@ -128,4 +114,14 @@ body {
 }
 .copy-btn:active::before {
   display: none;
+}
+.background-img {
+  height: 40vh;
+  background-image: url(../images/background-img.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  height: 33rem;
 }
