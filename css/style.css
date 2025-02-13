@@ -15,7 +15,7 @@
   -webkit-text-fill-color: transparent;
 }
 body {
-  height: 500vh;
+  height: 1000vh;
 }
 .pointer {
   cursor: pointer;
@@ -71,7 +71,10 @@ body {
 }
 .dropdown-toggle:hover span {
   font-size: 1.1rem;
-  color: var(--green-color);
+  background: -webkit-linear-gradient(var(--main-color), var(--green-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .icons-list {
   font-size: 3rem;
@@ -117,11 +120,60 @@ body {
 }
 .background-img {
   height: 40vh;
-  background-image: url(../images/background-img.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
+.background-url1 {
+  background-image: url(../images/background1-img.png);
+}
+.background-url2 {
+  background-image: url(../images/background2-img.jpg);
+}
 .card {
-  height: 33rem;
+  height: 32rem;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    var(--main-hover-color) 30%
+  );
+  transform: rotate(-45deg);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--main-hover-color);
+}
+.card:hover::before {
+  opacity: 0.8;
+  transform: rotate(-45deg) translateY(100%);
+}
+.item{
+  transition: 0.5s;
+  cursor: pointer;
+}
+.item>img{
+  filter: grayscale(50%);
+  /* transform: scale(100); */
+  transition: 0.5s;
+}
+.item:hover >img{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+.item:hover{
+  transform: scale(0.95);
 }
