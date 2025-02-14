@@ -61,7 +61,6 @@
 .carousel-item img {
   width: 100%;
   height: calc(100vh);
-  object-fit: fill;
 }
 .carousel-caption {
   background-color: var(--carousel-bg-color);
