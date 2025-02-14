@@ -22,9 +22,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body {
-  /* height: 2000vh; */
-}
 .pointer {
   cursor: pointer;
 }
